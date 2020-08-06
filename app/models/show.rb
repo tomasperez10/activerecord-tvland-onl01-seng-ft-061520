@@ -6,5 +6,6 @@ class Show < ActiveRecord::Base
   def actors_list
     actors = []
     actors << Artist.new.full_name
+    actors.length
   end
 end

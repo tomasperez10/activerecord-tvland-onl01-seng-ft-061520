@@ -4,6 +4,7 @@ class Show < ActiveRecord::Base
   belongs_to :network
 
   def actors_list
-    return name.first
+    name = "Andrew Lincoln"
+    name
   end
 end

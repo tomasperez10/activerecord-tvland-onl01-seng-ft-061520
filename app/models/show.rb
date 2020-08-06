@@ -6,5 +6,6 @@ class Show < ActiveRecord::Base
   def actors_list
     actors = []
     actors << "#{CreateActors.new.first_name} #{CreateActors.new.last_name}"
+    actors
   end
 end

@@ -6,5 +6,6 @@ class Show < ActiveRecord::Base
   def actors_list
     self.actors.each do |actor|
       actor = Actor.new.full_name
+    end
   end
 end

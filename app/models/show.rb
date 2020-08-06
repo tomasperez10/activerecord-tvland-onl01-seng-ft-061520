@@ -4,9 +4,6 @@ class Show < ActiveRecord::Base
   belongs_to :network
 
   def actors_list
-    actors = self.actors.collect do |actor|
-      actor = []
-      actor << Actor.new.full_name.text
-    end
+    
   end
 end

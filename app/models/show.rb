@@ -6,7 +6,7 @@ class Show < ActiveRecord::Base
   def actors_list
     actors = self.actors.collect do |actor|
       actor = []
-      actor << Actor.new.full_name
+      actor << Actor.new.full_name.text
     end
   end
 end

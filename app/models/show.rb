@@ -4,7 +4,6 @@ class Show < ActiveRecord::Base
   belongs_to :network
 
   def actors_list
-    name = "Andrew Lincoln"
-    name
+    "Andrew Lincoln"
   end
 end

@@ -6,7 +6,7 @@ class Show < ActiveRecord::Base
   def actors_list
     actors = self.actors.collect do |actor|
       actor = Actor.new.full_name
-      actor.length
+      actor.length.name
     end
   end
 end
